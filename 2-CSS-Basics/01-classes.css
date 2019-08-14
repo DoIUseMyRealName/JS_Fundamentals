@@ -1,0 +1,21 @@
+/*2*/
+body {
+    background-color: blue;
+}
+
+.css-classes {
+    background-color: light-gray;
+}
+
+.css-classes h1{
+    font-size: 18px;
+}
+
+.css-classes p{
+    font-size: 16px;
+    color: green;
+}
+
+.css-classes li{
+    color: navy;
+}
