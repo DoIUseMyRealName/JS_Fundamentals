@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- What is Bootstrap? Bootstrap is a HTML, CSS, and JS framework for developing responsive, mobile first projects. -->
+    <!-- How do I use Bootstrap? Head to https://getbootstrap.com/ and click the 'Get Started' button. -->
+    <!-- In the getting started guide, you should see CSS and JS, each with respective links under them. To access the Bootstrap framework, we need to use these links into our HTML file. Follow the directions on Bootstrap's website and copy/paste the necessary 'link' and 'script' tags. -->
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Jua|Raleway+Dots" rel="stylesheet">
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+
+  <!-- Bootstrap has prebuilt components that we can use within our webpage's. Below, we're using Bootstrap's navbar component. On the Bootstrap website, in the left sidebar, you should see a link to 'Components'. After clicking Components, the left sidebar should populate a list of all of the pre-built components Bootstrap has to offer. We can use these components and edit them however we would like. -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown link
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header -->
+
+  <!-- Here we are using Bootstrap's 'Jumbotron' component to create a header or landing page for our site. -->
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">fluid jumbotron</h1>
+      <p class="lead">this is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+    </div>
+  </div>
+
+
+  <!-- Projects -->
+
+  <!-- Although we are not using a Bootstrap component for our projects section, we are using Bootstrap's grid system to help with the layout of our webpage. In the 'Grid' section located in the left sidebar, there is documentation explaining how to implement Bootstrap's grid system within our webpage. -->
+  <!-- Bootstap's grid system has 12 columns that span the horizontal width of our viewport. By using the container, row, and col classes, we can use the grid system to evenely space out how many columns we want. In our code below, we have three div's that are each taking up 4 columns of the alloted 12 - which means they should be evenly spaced, taking up 4 columns each. -->
+  <!-- Below we have a container, with a nested row, and 3 nested columns. The container is simply just a container for our content that we want to display in our grid. The row will align our columns in a horizontal row. And the columns are were we store our information.  -->
+
+  <section id="projects">
+    <h1 style="text-align: center">Projects</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis ex, quo laborum quae
+            aspernatur qui saepe eligendi cumque. Blanditiis qui sequi ratione minima. Optio nesciunt cum
+            accusantium sed eos accusamus? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Corporis quidem aliquam, repudiandae aut saepe corrupti aliquid in omnis, eius magnam ea ex
+            incidunt quo dignissimos ullam eum itaque similique velit.</p>
+        </div>
+        <div class="col-4">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis ex, quo laborum quae
+            aspernatur qui saepe eligendi cumque. Blanditiis qui sequi ratione minima. Optio nesciunt cum
+            accusantium sed eos accusamus? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Corporis quidem aliquam, repudiandae aut saepe corrupti aliquid in omnis, eius magnam ea ex
+            incidunt quo dignissimos ullam eum itaque similique velit.</p>
+        </div>
+        <div class="col-4">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis ex, quo laborum quae
+            aspernatur qui saepe eligendi cumque. Blanditiis qui sequi ratione minima. Optio nesciunt cum
+            accusantium sed eos accusamus? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Corporis quidem aliquam, repudiandae aut saepe corrupti aliquid in omnis, eius magnam ea ex
+            incidunt quo dignissimos ullam eum itaque similique velit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+
+
+  <!-- Contact -->
+
+  <!-- Our contact form is powered by formspree. Formspree is a free email service for HTML forms, that re-routes any form submissions to the provided email address (should be your personal email). This allows us to use form submission on our portfolios without using any JavaScript to post/route the form to us - formspree does that for us. -->
+
+  <section id="contact">
+    <div class="container">
+      <br>
+      <br>
+      <h2 class="text-center text-uppercase">Contact Me</h2>
+      <div class="row">
+        <div class="col-12">
+          <form action="https://formspree.io/maynard.zach23@gmail.com" method="POST">
+            <div class="control-group">
+              <div class="form-group">
+                <label>Name</label>
+                <input type="text" class="form-control" placeholder="Your Name" id="name" required
+                  data-validation-required-message="Please enter your name" name="name">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" class="form-control" placeholder="Your Email" id="email" required
+                  data-validation-required-message="Please enter your email" name="_replyto">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="form-group">
+                <textarea class="form-control" rows="7" placeholder="Your Message" id="message" required
+                  data-validation-required-message="Please leave a message" name="message"></textarea>
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="text-center">
+              <div id="success"></div>
+              <button type="submit" class="btn btn-lg btn-black">
+                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS links -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

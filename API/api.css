@@ -1,26 +1,82 @@
-#root {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .card {
-    margin: 1rem;
-    border: 1px solid gray;
-  }
-  
-  @media screen and (min-width: 600px) {
-    .card {
-      flex: 1 1 calc(50% - 2rem);
+#submit {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+body {
+  background-image: url('../API/assets/vocalPercussion.gif');
+}
+
+.movieTable {
+  color: cyan;
+  text-shadow: 2px 2px 5px hotpink;
+}
+
+#table {
+  background-image: url('../../portfolioExample/assets/portfolioBackground.png');
+  margin-right: auto;
+  margin-left: auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 75px;
+  -webkit-animation: colorchange 10s;
+  infinite alternate;
+}
+
+    @-webkit-keyframes colorchange {
+      0% {
+        
+        color: red;
+      }
+      
+      10% {
+        
+        color: orange;
+      }
+      
+      20% {
+        
+        color: yellow;
+      }
+      
+      30% {
+        
+        color: green;
+      }
+      
+      40% {
+        
+        color: blue;
+      }
+      
+      50% {
+        
+        color: purple;
+      }
+      
+      60% {
+        
+        color: blue;
+      }
+      
+      70% {
+        
+        color: green;
+      }
+      80% {
+     
+        color: yellow;
+      }
+      
+      90% {
+     
+        color: orange;
+      }
+      
+      100% {
+        
+        color: red;
+      }
     }
-  }
-  
-  @media screen and (min-width: 900px) {
-    .card {
-      flex: 1 1 calc(33% - 2rem);
-    }
-  }

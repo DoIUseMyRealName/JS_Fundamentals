@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <title>Ghibli API</title>
-
-    <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="api.css">
-
-</head>
-
-<body>
-    <div id="root"></div>
-    <script src="apiproj.js"></script>
-</body>
+    <link rel="stylesheet" href="../API/api.css">
+    <title>Studio Ghibli</title>
+  </head>
+  <body>
+   <!-- <img class="vocalPercussion" src="assets/vocalPercussion.gif">-->
+    <h1>Anime Party</h1>
+    <form>
+      <button id="submit">Begin Anime Party</button>
+    </form>
+​
+    <div class="movieTable">
+      <table id="table" width="575" border="5px">
+        <tr>
+          <th>Movie</th>
+          <th>Description</th>
+        </tr>
+        <tr id="rocketData"></tr>
+      </table>
+    </div>
+​<script src="apiproj.js"></script>
+  </body>
 </html>

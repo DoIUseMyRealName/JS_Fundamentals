@@ -1,15 +1,21 @@
-fetch('https://ghibliapi.herokuapp.com/films')
+/*fetch('https://ghibliapi.herokuapp.com/films')
     .then(function(response) {
         return response.json();
     })
     .then(function(myJson) {
         console.log(myJson)
-    })
+    })*/
+
+const baseURL="https://ghibliapi.herokuapp.com/films"
 
 const searchform = document.querySelector('form');
-const spaceShips = document.querySelector('table');
+const title = document.querySelector('table');
 
 searchform.addEventListener('submit', fetchSpace);
+
+function vocal() {
+document.body.style.backgroundImage = "../API/assets/vocalPercussion.gif"
+}
 
 function fetchSpace(event) {
 event.preventDefault();
@@ -20,24 +26,27 @@ fetch(baseURL)
 })
 .then(json =>{
     //console.log(json);
-    displayRockets(json)
+    showMovie(json)
 })
 }
 
-function displayRockets(data){
+function showMovie(data){
 console.log('results', data);
 
-let rockets = data.forEach(element => {
+let movieInfo = data.forEach(element => {
     console.log(element);
-let rocket = document.createElement('tr');
-let rocketName = document.createElement('td');
-let rocketCost = document.createElement('td');
+let movie = document.createElement('tr');
+let movieTitle = document.createElement('td');
+let movieDescription = document.createElement('td');
+let movieDirector = document.createElement('td');
 
-rocketName.innerText = element.name;
-rocketCost.innerText = element.cost_per_launch
+movieTitle.innerText = element.title;
+movieDescription.innerText = element.description;
+movieDirector.innertext = element.director;
 
-spaceShips.appendChild(rocket);
-rocket.appendChild(rocketName);
-rocket.appendChild(rocketCost);
+title.appendChild(movie);
+movie.appendChild(movieTitle);
+movie.appendChild(movieDescription);
+movie.appendChild(movieDirector)
 })
 }
