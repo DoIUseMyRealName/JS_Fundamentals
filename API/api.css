@@ -4,16 +4,16 @@
 }
 
 body {
-  background-image: url('../API/assets/vocalPercussion.gif');
+  background-color: black;
 }
 
 .movieTable {
   color: cyan;
-  text-shadow: 2px 2px 5px hotpink;
+  text-shadow: 2px 2px 5px black;
 }
 
 #table {
-  background-image: url('../../portfolioExample/assets/portfolioBackground.png');
+  background-image: url('./assets/vocalPercussion.gif');
   margin-right: auto;
   margin-left: auto;
 }
@@ -22,7 +22,7 @@ h1 {
   text-align: center;
   font-size: 75px;
   -webkit-animation: colorchange 10s;
-  infinite alternate;
+  infinite: alternate;
 }
 
     @-webkit-keyframes colorchange {
